@@ -49,11 +49,12 @@ class ViewController: UIViewController {
     
     //动画
     func animateLabelTransitions(){
-        let animationClosure = {()-> Void in
+        UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
             self.currentQuestionLabel.alpha = 0 //当前问题标签消失
             self.nextQuestionLabel.alpha = 1    //下一个问题标签显示
-        }
-        UIView.animate(withDuration: 1, animations: animationClosure)
+        }, completion: {_ in
+            swap(&self.currentQuestionLabel, &self.nextQuestionLabel)
+        })
     }
     
     //MARK: 模型对象
