@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         let screenWidth = view.frame.width
         self.nextQuestionLabelCenterXConstraint.constant = 0
         self.currentQuestionLabelCenterXConstraint.constant += screenWidth
-        UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
+        UIView.animate(withDuration: 1, delay: 0, options: [.curveLinear], animations: {
             self.currentQuestionLabel.alpha = 0 //当前问题标签消失
             self.nextQuestionLabel.alpha = 1    //下一个问题标签显示
             self.view.layoutIfNeeded()
