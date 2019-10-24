@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -51,25 +50,25 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="B8c-HI-L5T" firstAttribute="centerX" secondItem="cty-U0-NLb" secondAttribute="centerX" id="AIf-mV-wKT"/>
-                            <constraint firstItem="Ml6-BL-Nkz" firstAttribute="top" secondItem="Ufg-Rp-UaJ" secondAttribute="bottom" constant="60" id="CtN-vb-oRQ"/>
-                            <constraint firstItem="Ml6-BL-Nkz" firstAttribute="centerX" secondItem="cty-U0-NLb" secondAttribute="centerX" id="EoL-lJ-PY0"/>
-                            <constraint firstItem="B8c-HI-L5T" firstAttribute="top" secondItem="cty-U0-NLb" secondAttribute="bottom" constant="38" id="F7a-Cw-cjj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TDD-mN-KP0" secondAttribute="trailing" id="FVm-md-6Gn"/>
-                            <constraint firstItem="cty-U0-NLb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Fc3-c0-gwL"/>
-                            <constraint firstItem="Ufg-Rp-UaJ" firstAttribute="top" secondItem="B8c-HI-L5T" secondAttribute="bottom" constant="43" id="OYu-Rm-7lW"/>
-                            <constraint firstItem="TDD-mN-KP0" firstAttribute="baseline" secondItem="cty-U0-NLb" secondAttribute="baseline" id="QlA-1q-MeW"/>
-                            <constraint firstItem="TDD-mN-KP0" firstAttribute="centerX" secondItem="cty-U0-NLb" secondAttribute="centerX" id="VPd-xu-ssD"/>
-                            <constraint firstItem="TDD-mN-KP0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o0M-Nf-VxV"/>
-                            <constraint firstItem="Ufg-Rp-UaJ" firstAttribute="centerX" secondItem="cty-U0-NLb" secondAttribute="centerX" id="sK4-Xi-Pb0"/>
-                            <constraint firstItem="cty-U0-NLb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xiN-k7-FDe"/>
+                            <constraint firstItem="cty-U0-NLb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ly-ex-0p4"/>
+                            <constraint firstItem="Ml6-BL-Nkz" firstAttribute="top" secondItem="Ufg-Rp-UaJ" secondAttribute="bottom" constant="60" id="5nd-gm-oeK"/>
+                            <constraint firstItem="B8c-HI-L5T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Pc-Js-q81"/>
+                            <constraint firstItem="Ufg-Rp-UaJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ogi-lq-pJD"/>
+                            <constraint firstItem="Ml6-BL-Nkz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S1p-kn-5DE"/>
+                            <constraint firstItem="Ufg-Rp-UaJ" firstAttribute="top" secondItem="B8c-HI-L5T" secondAttribute="bottom" constant="43" id="XQ3-tC-mOx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ml6-BL-Nkz" secondAttribute="bottom" constant="394" id="cyt-nT-lAr"/>
+                            <constraint firstItem="TDD-mN-KP0" firstAttribute="top" secondItem="cty-U0-NLb" secondAttribute="top" id="vCb-j3-vbu"/>
+                            <constraint firstItem="B8c-HI-L5T" firstAttribute="top" secondItem="cty-U0-NLb" secondAttribute="bottom" constant="38" id="vha-U1-yel"/>
+                            <constraint firstItem="TDD-mN-KP0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zBk-N5-8wV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="Ufg-Rp-UaJ" id="Gm5-wp-yDT"/>
                         <outlet property="currentQuestionLabel" destination="cty-U0-NLb" id="IIE-KX-Ruf"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="2ly-ex-0p4" id="KKH-O7-rfy"/>
                         <outlet property="nextQuestionLabel" destination="TDD-mN-KP0" id="APA-xK-TMn"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="zBk-N5-8wV" id="P2J-Z3-1D3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
